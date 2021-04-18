@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="actividad2proyectojava">
+  <ClassDiagramComponents>
+    <Class name="Actividad2ProyectoJava" package="actividad2proyectojava" visibility="public" xPosition="98.0" yPosition="452.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Circulo" package="actividad2proyectojava" visibility="public" xPosition="400.0" yPosition="105.0">
+      <Fields>
+        <Field name="radio" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cono" package="actividad2proyectojava" visibility="public" xPosition="705.0" yPosition="86.0">
+      <Fields>
+        <Field name="altura" type="float" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Punto" package="" visibility="public" xPosition="123.0" yPosition="96.0">
+      <Fields>
+        <Field name="x" type="float" visibility="private"/>
+        <Field name="y" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="1" source="actividad2proyectojava.Circulo" target="Punto" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="1" source="actividad2proyectojava.Cono" target="actividad2proyectojava.Circulo" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
